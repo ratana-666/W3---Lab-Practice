@@ -32,7 +32,6 @@ class SLL{
         SLL(){
             n = 0;
             head = nullptr;
-            tail = nullptr;
         }    
 }
 class CSLL{
