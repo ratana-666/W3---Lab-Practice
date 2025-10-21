@@ -11,6 +11,20 @@ class CSLL{
             n = 0;
             head = nullptr;
         }    
+
+        void allocate(int n) {
+        if (n <= 0) return;
+
+        head = new CSLLNode{0, nullptr};
+        CSLLNode* curr = head;
+
+        for (int i = 1; i < n; ++i) {
+            curr->next = new CSLLNode{i, nullptr};
+            curr = curr->next;
+        }
+
+        curr->next = head;
+    }
 };
 
 #endif
