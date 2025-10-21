@@ -1,51 +1,46 @@
-#ifdef NODE
-#defind NODE
-    struct sNode{
+#ifndef NODE_HPP
+#define NODE_HPP
+#include<iostream>
+    struct Node{
         int value;
         Node* next;
-}
-    struct cNode{
-        int value;
-        Node* next;
-}
+};
     struct dNode{
         int value;
-        Node* next;
-        Node* prv;
-}   
+        dNode* next;
+        dNode* prv;
+};
 class DLL{
     private:
         int n;
-        cNode *head,*tail;
+        dNode *head,*tail;
     public:
         DLL(){
             n = 0;
             head = nullptr;
             tail = nullptr;
         }    
-}
+};
 class SLL{
     private:
         int n;
-        cNode *head;
+        Node *head;
     public:
         SLL(){
             n = 0;
             head = nullptr;
-            tail = nullptr;
         }    
-}
+};
 class CSLL{
     private:
         int n;
-        cNode *head,*tail;
+        Node *head;
     public:
         CSLL(){
             n = 0;
             head = nullptr;
-            tail = nullptr;
         }    
-}
+};
 
 
 
